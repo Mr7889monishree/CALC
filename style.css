@@ -1,67 +1,60 @@
 body{
+    background-color: rgb(236,232,175);
+    margin-top: 150px;
+}
+
+p{
     margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: hsl(0,0,95%);
-}
-#display{
-    width: 100%;
-    padding: 20px;
-    font-size: 5rem;
-    text-align: left;
-    border: none;
-    background-color:hsl(0, 5%, 20%) ;
-    margin-bottom: 10px;
-    color: white;
-
-}
-#calculator{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: hsl(0, 0%, 15%);
-    border-radius: 15px;
-    max-width: 500px;
-    overflow: hidden;
-    padding: 2px;
-}
-
-
-#keys{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap:10px;
-}
-
-
-button{
-    width: 100px;
-    height: 100px;
-    border-radius:50px;
-    border:none;
-    background-color: hsl(0, 0%, 30%);
-    color: white;
-    font-size: 3rem;
+    font-family: 'poppins',sans-serif;
     font-weight: bold;
+    position: relative;
+    left: 25%;
+}
+
+.calculator{
+    position: relative;
+    margin: 1em auto;
+    padding: 1em 0;
+    width: 350px;
+    display: block;
+    border-radius: 25px;
+    box-shadow: 5px 5px 15px 3px #111;
+    background-color: #444;
+    font-weight: bold;
+    font-family: 'Oxygen';
+}
+.calc-row{
+    text-align: center;
+}
+.calc-row div.screen{
+    font-family: Droid Sans Mono;
+    display: table;
+    width: 85%;
+    background-color: #aaa;
+    text-align: right ;
+    font-size: 2em;
+    min-height: 1.2em;
+    margin-left: 0.5em;
+    padding-right: 0.5em;
+    border: 1px solid #888;
+    color: #333;
+}
+.calc-row div{
+    text-align: center;
+    display: inline-block;
+    padding: 10px 0;
+    margin: 7px 5px;
+    border: 1px solid #555;
+    background-color: #eee;
+    box-shadow: 2px 1px 1px 1px #222;
+    font-weight: bold;
+    width: 50px;    
+    border-radius: 15px;
     cursor: pointer;
-
 }
-button:hover{
-    background-color: hsl(0, 0%, 40%);
+.calc-row div.equal{
+    width: 112px;
 }
-button:active{
-    background-color: hsl(0, 0%, 50%);
-
-}
-.operatorbtn{
-    background-color: hsl(35, 100%, 55%);
-
-}
-.operatorbtn:hover{
-    background-color: hsl(35, 100%, 65%);
-
-}
-.operatorbtn:active{
-    background-color: hsl(35, 100%, 75%);
-
+.calc-row div.equal{
+    margin-left: 5px;
 }
